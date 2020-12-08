@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" type="text/css" href="loginstyle.css">
+    </head>
+    <body style="background-image: url(img3.png);">
+    <center>
+        <div class="central-div">
+            <form method="post" action="LoginServlet">
+                <input type="hidden" name="page" value="login"> 
+                <table>
+                    <tr>
+                        <td colspan="2"> <center><h2>Login Form</h2></center> </td>
+                    </tr>
+                    <tr>
+                        <td> <label>User Name: </label></td>
+                        <td><input type="text" class="text" placeholder="User Name" name="username">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> <label>Password: </label></td>
+                        <td><input type="password" class="text" placeholder="Password" name="password"></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">
+                            <div id="msg"></div>
+                        </td>
+                    </tr>
+
+                    <tr><td colspan="2">
+                    <center><a href="">Forgot Password??</a></center></td>  
+                    </tr>
+                    <tr><td  colspan="2">
+                    <center><input type="submit" value="Login" class="button">
+                    </center></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </center>	
+</body>
+</html>
+
+<!--  <script>alert("username or password is incorrect");</script>
+<p style="color: rgba(255, 255, 51, 1);font-size: 17px">username or password is incorrect</p>
+<script>
+    function onReload(){
+    document.location.reload(true);
+    var msg = "username or password is incorrect";
+    <script>alert("username or password is incorrect");
+    document.getElementById("msg").innerHTML = msg;
+}
+</script>
+<br>-->
